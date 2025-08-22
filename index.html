@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- In your <head> section -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <title>Pegah Rahmani - Job Market Candidate</title>
+    <style>
+        :root {
+            --text-color: #333;
+            --outtext-color: #F5F7FA;
+            --link-color: #4169E1 ; 
+            --namecolor: #F5F7FA ;
+            --title-color: #1A1F36 ; 
+            --background-color: #1A1F36 ; 
+            --tab-background-color: #F5F7FA ;
+            --line-color: #ddd;
+            --main-font: 'Georgia', serif;
+            --heading-font: 'Georgia', serif;
+        }
+        
+        body {
+            font-family: var(--main-font);
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--line-color);
+            color: var(--outtext-color);
+        }
+        .header-text {
+            flex: 1;
+            padding-left: 20px;
+        }
+        h1 {
+            color: var(--namecolor);
+            font-size: 2.5em;
+            font-family: var(--heading-font);
+        }
+        h2 {
+            color: var(--title-color);
+            border-bottom: 2px solid var(--line-color);
+            padding-bottom: 5px;
+            font-family: var(--heading-font);
+        }
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            background: var(--tab-background-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: var(--link-color);
+            cursor: pointer;
+            font-family: var(--heading-font);
+        }
+        .tab-content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--line-color);
+        }
+    </style>
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="/mnt/data/PegahRahmani.jpg" alt="Pegah Rahmani" class="profile-pic">
+        <div class="header-text">
+            <h1>Pegah Rahmani</h1>
+            <p style="font-family: Great Vibes, cursive; font-size: 1.3rem;">
+              Not all logic is loud—some choices whisper, and I listen.
+            </p>
+            <p>PhD Candidate, University of Toronto</p>
+            <p>Email: <a href="mailto:pegah.rahmani@mail.utoronto.ca">pegah.rahmani@mail.utoronto.ca</a> | <a href="https://onedrive.live.com/download?cid=YOUR_CID&resid=YOUR_RESID&authkey=YOUR_AUTHKEY">Download CV</a></p>
+        </div>
+    </header>
+    
+    <nav>
+        <a onclick="showTab('about')">About</a>
+        <a onclick="showTab('cv')">CV</a>
+        <a onclick="showTab('research')">Research</a>
+        <a onclick="showTab('teaching')">Teaching</a>
+        <a onclick="showTab('contact')">Contact</a>
+    </nav>
+    
+    <section id="about" class="section tab-content active">
+        <h2>About Me</h2>
+        <p>I am a PhD candidate in Economics at the University of Toronto. My research lies at the intersection of Behavioral Economics and Decision Theory, with a focus on how individuals make context-dependent decisions under uncertainty.</p>
+        <p>I am particularly interested in correlation-sensitive models of decision-making, especially in settings where preferences may be incomplete. My current work develops and analyzes incomplete correlation-sensitive models to better understand how individuals navigate uncertainty when standard preference assumptions fail to hold.</p>
+        <b>I am on the 2025-2026 academic job market.</b>
+        <p><b>Interests: </b>Behavioral Economics, Experimental Economics, Microeconomic Theory, Decision Theory</p>
+        <p><b>References: </b><a href="https://yoram-halevy.faculty.economics.utoronto.ca/">Yoram Halevy</a>, <a href="https://marcinpeski.github.io/">Marcin Pęski</a>, <a href="https://sites.google.com/view/colinstewart/home?authuser=0">Colin Stewart</a></p>
+    </section>
+    
+    <section id="cv" class="section tab-content">
+        <h2>Curriculum Vitae</h2>
+        <iframe src="https://onedrive.live.com/embed?cid=YOUR_CID&resid=YOUR_RESID&authkey=YOUR_AUTHKEY" width="100%" height="600px"></iframe>
+        <p><a href="https://onedrive.live.com/download?cid=YOUR_CID&resid=YOUR_RESID&authkey=YOUR_AUTHKEY" target="_blank">Download CV</a></p>
+    </section>
+    
+    <section id="research" class="section tab-content">
+        <h2>Research</h2>
+        <ul>
+          <!--
+            <li><strong>Paper Title 1</strong> - <i>Journal/Conference Name</i> - <a href="paper1.pdf">Download</a></li>
+            <li><strong>Paper Title 2</strong> - <i>Journal/Conference Name</i> - <a href="paper2.pdf">Download</a></li> 
+            <li><strong>Incomplete Correlation-sensitive Models of Decision-making Under Uncertainty</strong> - <i>Job Market Paper</i><p>hishoh<p></li> -->
+            <li><strong>Incomplete Correlation-sensitive Models of Decision-making Under Uncertainty</strong> - <i>Job Market Paper</i><p>This paper provides an axiomatization of a general correlation-sensitive model of decision making under uncertainty without requiring completeness of preferences. The model is represented by a correlation-sensitive multi-utility framework. The axioms underlying the characterization are reflexivity, monotonicity, strong independence, and continuity. 
+Whereas Lanzani (2022)’s result employs completeness, strong independence, and Archimedean continuity, the present approach replaces completeness with reflexivity and monotonicity, thereby accommodating incomplete preferences. When transitivity is additionally imposed, the model collapses to the expected multi-utility representation, Dubra
+et al. (2004). These results establish a unified axiomatic foundation for correlation-sensitive models and clarify the roles of incompleteness and transitivity in shaping preference representation under uncertainty.<p></li>
+            <li><strong>Explanatory power of a reference-dependent utility model</strong> - <i>Second year Paper</i><p>Using functional forms, we describe different aspects of the decision-making process. These functions are assumed to represent subjective evaluations for different options in a given choice set. When options are uncertain, these functions become more complicated. Features of the functions are derived from subjects' behaviors to transform the functional forms into a descriptive model of how people evaluate or compare objects.
+
+The purpose is to demonstrate that there are other ways to represent subjects' behaviors, using functional features. We want to find out whether the Expected Utility Model's violations can be explained by a shift in the reference point. The shift depends on the characteristics of the choice set. We use the cumulative prospect theory model as a measure that addresses the expected utility model violations for every binary choice set.<p></li>
+        </ul>
+    </section>
+    
+    <section id="teaching" class="section tab-content">
+        <h2>Teaching</h2>
+        <p><strong>Course Instructor:</strong></p>
+        <ul>
+          <li>ECO326: Advanced Economic Theory - Micro (2022–2023)</li>
+          <p>Course materials are available upon request.</p>
+        </ul> 
+        <p><strong>TA:</strong></p>
+        <ul>
+          <li>ECO200: Microeconomic Theory (2020–2025)</li>
+          <li>ECO326: Advanced Economic Theory - Micro</li>
+          <li>ECO316: Applied Game Theory</li>
+          <li>ECO206: Microeconomic Theory</li>
+          <li>ECO102: Principles of Macroeconomics</li>
+        </ul> 
+    </section>
+    
+    <section id="contact" class="section tab-content">
+        <h2>Contact</h2>
+        <p>Phone: 437-987-1545</p>
+        <p>Email: <a href="mailto:pegah.rahmani@mail.utoronto.ca">pegah.rahmani@mail.utoronto.ca</a></p>
+        <p>Office: <br>Office 40, Economics Department, University of Toronto<br>Max Gluskin House, 150 St. George Street<br>Toronto ON M5S 3G7<br>Canada</p>
+      <!--
+        <p>Links: <a href="https://scholar.google.com/">Google Scholar</a> | <a href="https://www.linkedin.com">LinkedIn</a> | <a href="https://github.com">GitHub</a></p>
+      -->
+    </section>
+</body>
+</html>
