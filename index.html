@@ -103,6 +103,23 @@
             max-width: 100%;
             height: auto;
         }
+        @media (max-width: 768px) {
+          body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+        
+          img {
+            max-width: 150px; /* adjust size for mobile if you like */
+            margin-bottom: 1rem;
+          }
+        
+          h1, p, a {
+            text-align: center;
+          }
+        }
     </style>
     <script>
         function showTab(tabId) {
